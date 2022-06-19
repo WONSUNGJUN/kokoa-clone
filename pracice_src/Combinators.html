@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Comninators</title>
+     <style>
+
+          body {
+               margin: 50px;
+          }
+
+          span {
+               background-color:red;
+               padding: 5px;
+               border-radius: 10px;
+          }
+
+          p span {
+               color: white;               
+          }
+          /* 바로 밑 */
+          div > span {
+               text-decoration: underline;
+          }
+
+          /* 같은 것들 : + */
+          /* div + span {
+               text-decoration: underline;
+          } */
+
+           /* p부터 span까지 모두 */
+          p ~ span {
+               text-decoration: underline;
+          }
+
+     </style>
+
+</head>
+<body>
+     <div>
+          <span>Introduce</span>
+          <p>
+               Hello World, My name is ACRO. I Have a Dream <span>Front-end</span> Developer.
+          </p>
+          
+     </div>     
+</body>
+</html>
